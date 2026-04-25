@@ -65,13 +65,13 @@ class _HabitifyAppState extends State<HabitifyApp> {
 
   void _addHabit(Habit habit) {
     setState(() {
-      _habits.add(habit);
+      _habits = [..._habits, habit];
     });
   }
 
   void _addCategory(Category category) {
     setState(() {
-      _categories.add(category);
+      _categories = [..._categories, category];
     });
   }
 
